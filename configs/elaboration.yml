@@ -1,0 +1,11 @@
+train:
+  em_iterations: 10
+  o_gen_max_iters: 250000
+  m_gen_max_iters: 250000
+  seed: 2025
+
+dataset:
+  begin: 0
+  end: 100
+  data_scale: 2500
+  building_fragment: 500

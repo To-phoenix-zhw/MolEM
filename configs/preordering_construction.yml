@@ -1,0 +1,10 @@
+seed: 2023
+transform:
+  mask:
+    type: em
+    C: 10 
+
+dataset:
+  name: pl
+  path: ./data/crossdocked_pocket10/
+  split: ./data/seq_split.pt

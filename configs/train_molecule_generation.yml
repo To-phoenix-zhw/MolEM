@@ -1,0 +1,35 @@
+model:
+  hidden_channels: 256
+  next_motif_loss: KL # KL/BCE
+  encoder:
+    name: hierGT
+    hidden_channels: 256
+    edge_channels: 64
+    key_channels: 128
+    num_heads: 4
+    num_interactions: 6
+    cutoff: 10.0
+    knn: 32
+    num_filters: 128
+
+train:
+  seed: 2025
+  batch_size: 8
+  num_workers: 4
+  val_freq: 1000
+  pos_noise_std: 0.1
+  max_grad_norm: 50
+  optimizer:
+    type: adam
+    lr: 1.e-4
+    weight_decay: 0
+    beta1: 0.99
+    beta2: 0.999
+  scheduler:
+    type: plateau
+    factor: 0.6
+    patience: 10
+    min_lr: 1.e-5
+
+dataset:
+  name: pl_prepared

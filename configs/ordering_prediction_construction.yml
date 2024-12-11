@@ -1,0 +1,10 @@
+train:
+  seed: 2025
+  transform:
+    mask:
+      type: pre_ordering 
+
+dataset:
+  name: pl
+  path: ./data/crossdocked_pocket10/
+  split: ./data/seq_split.pt

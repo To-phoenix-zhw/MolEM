@@ -1,0 +1,25 @@
+dataset:
+  name: pl
+  path: ./data/crossdocked_pocket10/
+  split: ./data/seq_split.pt
+
+model:
+  hidden_channels: 256
+  next_motif_loss: KL # KL/BCE
+  encoder:
+    name: hierGT
+    hidden_channels: 256
+    edge_channels: 64
+    key_channels: 128
+    num_heads: 4
+    num_interactions: 6
+    cutoff: 10.0
+    knn: 32
+    num_filters: 128
+
+sample:
+  seed: 2025
+  num_samples: 100
+  max_steps: 16
+  batch_size: 1
+  num_workers: 4
