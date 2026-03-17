@@ -7,8 +7,6 @@ Briefings in Bioinformatics (2025)
 
 Paper: https://academic.oup.com/bib/article/26/2/bbaf094/8101319
 
----
-
 ## Overview
 
 MolEM is a generative framework for molecular design that jointly models:
@@ -29,9 +27,6 @@ The framework alternates between:
 
 These two models are trained iteratively.
 
-<p align="center">
-<img src="Figure1.png" width="800">
-</p>
 
 ---
 
@@ -79,6 +74,7 @@ conda install -c conda-forge qvina
 
 MolEM expects the following directory structure:
 
+```
 em/
  ├── training/
  │   ├── pre_orderings.csv
@@ -91,6 +87,7 @@ em/
  ├── mol_000/
  ├── mol_001/
  └── ...
+```
 
 
 Each molecule directory contains preprocessed graph data stored as `.pt` files.
