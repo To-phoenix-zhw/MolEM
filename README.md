@@ -12,7 +12,7 @@ Paper: https://academic.oup.com/bib/article/26/2/bbaf094/8101319
 MolEM is a generative framework for molecular design that jointly models:
 
 - **molecular graph generation**
-- **latent orders**
+- **latent ordering**
 
 The key idea is that **multiple sequential orders can generate the same molecular graph**.  
 MolEM treats these sequential orders as latent variables and learns them through an **Expectation-Maximization (EM)** procedure.
