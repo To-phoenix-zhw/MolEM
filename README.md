@@ -191,16 +191,18 @@ The best orderings are then used for the next EM iteration.
 
 If you find this repo useful, please cite our paper.
 
-> @article{zhang2025molem,
-> title={MolEM: a unified generative framework for molecular graphs and sequential orders},
->   author={Zhang, Hanwen and Xiong, Deng and Liu, Xianggen and Lv, Jiancheng},
->   journal={Briefings in bioinformatics},
->   volume={26},
->   number={2},
->   pages={bbaf094},
->   year={2025},
->   publisher={Oxford University Press}
->   }
+```
+@article{zhang2025molem,
+  title={MolEM: a unified generative framework for molecular graphs and sequential orders},
+  author={Zhang, Hanwen and Xiong, Deng and Liu, Xianggen and Lv, Jiancheng},
+  journal={Briefings in bioinformatics},
+  volume={26},
+  number={2},
+  pages={bbaf094},
+  year={2025},
+  publisher={Oxford University Press}
+}
+```
 
 ## Contact
 
